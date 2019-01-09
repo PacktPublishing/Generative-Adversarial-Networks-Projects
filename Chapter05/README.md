@@ -2,7 +2,7 @@
 
 Keras implementation of "Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network"
 
-Python 3.7
+Python 3.6
 
 Steps to set up the project:
 1. Create a virtual environment and activate it
