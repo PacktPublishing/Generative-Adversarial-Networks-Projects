@@ -5,9 +5,8 @@ Keras implementation of "Photo-Realistic Single Image Super-Resolution Using a G
 Python 3.6
 
 Steps to set up the project:
-1. Create a virtual environment and activate it
+1. Create a python3 virtual environment and activate it
 2. Install dependencies using "pip install -r requirements.txt"
-3. Create essential folders 1. logs 2. results
-4. Download the training dataset from "http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip"
-5. Download the validation dataset from "http://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip"
-6. Train the model: python3 run.py
+3. Create essential folders like 1. logs 2. results 3. data
+4. Download 'img_align_celeba.zip' from "https://drive.google.com/drive/folders/0B7EVK8r0v71pTUZsaXdaSnZBZzg"
+5. Train the model by executing "python3 run.py"
