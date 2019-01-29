@@ -10,7 +10,6 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 from keras import Sequential, Input, Model
-# from keras.applications.inception_v3 import InceptionV3, preprocess_input
 from keras.applications.inception_resnet_v2 import InceptionResNetV2, preprocess_input
 from keras.callbacks import TensorBoard
 from keras.layers import Conv2D
@@ -270,7 +269,7 @@ def visualize_rgb(img):
 
 def save_rgb_img(img, path):
     """
-    Save a lab image
+    Save a rgb image
     """
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
