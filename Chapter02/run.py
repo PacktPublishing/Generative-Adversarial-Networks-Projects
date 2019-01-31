@@ -148,7 +148,7 @@ if __name__ == '__main__':
     Specify Hyperparameters
     """
     object_name = "chair"
-    data_dir = "/Path/to/3DShapeNets/volumetric_data/" \
+    data_dir = "data/3DShapeNets/volumetric_data/" \
                "{}/30/train/*.mat".format(object_name)
     gen_learning_rate = 0.0025
     dis_learning_rate = 10e-5

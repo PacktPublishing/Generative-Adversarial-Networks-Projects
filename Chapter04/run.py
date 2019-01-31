@@ -283,7 +283,7 @@ def save_rgb_img(img, path):
 
 def train():
     start_time = time.time()
-    dataset_dir = "/path/to/dataset/directory/*.*"
+    dataset_dir = "data/*.*"
     batch_size = 128
     z_shape = 100
     epochs = 10000

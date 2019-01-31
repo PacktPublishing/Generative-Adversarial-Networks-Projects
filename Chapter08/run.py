@@ -405,7 +405,7 @@ if __name__ == '__main__':
     num_channels = 1
     input_img_dim = (256, 256, 1)
     patch_dim = (256, 256)
-    dataset_dir = "/Path/to/pix2pix/dataset/"
+    dataset_dir = "data/facades_bw/"
 
     common_optimizer = Adam(lr=1E-4, beta_1=0.9, beta_2=0.999, epsilon=1e-08)
 

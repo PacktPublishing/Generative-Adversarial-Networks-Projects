@@ -232,7 +232,7 @@ def write_log(callback, name, value, batch_no):
 
 
 if __name__ == '__main__':
-    data_dir = "/path/to/dataset/directory/*.*"
+    data_dir = "data/img_align_celeba/*.*"
     epochs = 30000
     batch_size = 1
     mode = 'predict'

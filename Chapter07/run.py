@@ -206,7 +206,7 @@ def write_log(callback, name, loss, batch_no):
 
 
 if __name__ == '__main__':
-    data_dir = "/Path/to/monet2photo/datase/"
+    data_dir = "data/monet2photo/"
     batch_size = 1
     epochs = 500
     mode = 'train'

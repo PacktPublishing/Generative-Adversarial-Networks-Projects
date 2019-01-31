@@ -305,7 +305,7 @@ def save_rgb_img(img, path):
 
 if __name__ == '__main__':
     # Define hyperparameters
-    data_dir = "/Path/to/Age-cGAN/dataset/"
+    data_dir = "data"
     wiki_dir = os.path.join(data_dir, "wiki_crop1")
     epochs = 500
     batch_size = 2
