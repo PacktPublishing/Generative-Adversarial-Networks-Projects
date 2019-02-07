@@ -11,7 +11,7 @@ This is the code repository for [Generative-Adversarial-Networks-Projects](https
 ## What is this book about?
 Generative Adversarial Networks (GANs) have the potential to build next-generation models, as they can mimic any distribution of data. Major research and development work is being undertaken in this field since it is one of the rapidly growing areas of machine learning. This book will test unsupervised techniques for training neural networks as you build seven end-to-end projects in the GAN domain.
 
-This book covers the following exciting features: <First 5 What you'll learn points>
+This book covers the following exciting features:
 * Train a network on the 3D ShapeNet dataset to generate realistic shapes
 * Generate anime characters using the Keras implementation of DCGAN
 * Implement an SRGAN network to generate high-resolution images
