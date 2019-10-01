@@ -9,8 +9,9 @@ from keras.callbacks import TensorBoard
 from keras.layers import Conv2D, BatchNormalization, Activation, Add, Conv2DTranspose, \
     ZeroPadding2D, LeakyReLU
 from keras.optimizers import Adam
-from keras_contrib.layers import InstanceNormalization
-from scipy.misc import imread, imresize
+from keras_contrib.layers.normalization.instancenormalization import InstanceNormalization
+from imageio import imread
+from skimage.transform import resize
 
 
 def residual_block(x):
@@ -114,11 +115,11 @@ def load_images(data_dir):
     allImagesB = []
 
     for index, filename in enumerate(imagesA):
-        imgA = imread(filename, mode='RGB')
-        imgB = imread(imagesB[index], mode='RGB')
+        imgA = imread(filename, pilmode='RGB')
+        imgB = imread(imagesB[index], pilmode='RGB')
 
-        imgA = imresize(imgA, (128, 128))
-        imgB = imresize(imgB, (128, 128))
+        imgA = resize(imgA, (128, 128))
+        imgB = resize(imgB, (128, 128))
 
         if np.random.random() > 0.5:
             imgA = np.fliplr(imgA)
@@ -146,8 +147,8 @@ def load_test_batch(data_dir, batch_size):
 
     for i in range(len(imagesA)):
         # Load images and resize images
-        imgA = imresize(imread(imagesA[i], mode='RGB').astype(np.float32), (128, 128))
-        imgB = imresize(imread(imagesB[i], mode='RGB').astype(np.float32), (128, 128))
+        imgA = resize(imread(imagesA[i], pilmode='RGB').astype(np.float32), (128, 128))
+        imgB = resize(imread(imagesB[i], pilmode='RGB').astype(np.float32), (128, 128))
 
         allA.append(imgA)
         allB.append(imgB)
@@ -218,7 +219,7 @@ if __name__ == '__main__':
         imagesA, imagesB = load_images(data_dir=data_dir)
 
         # Define the common optimizer
-        common_optimizer = Adam(0.0002, 0.5)
+        common_optimizer = Adam(0.002, 0.5)
 
         # Build and compile generator networks
         discriminatorA = build_discriminator()
