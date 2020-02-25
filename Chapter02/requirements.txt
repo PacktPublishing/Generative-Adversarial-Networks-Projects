@@ -41,4 +41,4 @@ trimesh==2.35.48
 urllib3==1.24.1
 visdom==0.1.8.5
 websocket-client==0.54.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
