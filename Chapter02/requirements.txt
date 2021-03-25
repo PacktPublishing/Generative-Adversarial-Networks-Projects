@@ -24,7 +24,7 @@ pydot==1.4.1
 pyparsing==2.3.0
 python-dateutil==2.7.5
 PyWavelets==1.0.1
-PyYAML==3.13
+PyYAML==5.4
 pyzmq==17.1.2
 requests==2.21.0
 scikit-image==0.14.1
