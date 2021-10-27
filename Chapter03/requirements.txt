@@ -4,7 +4,7 @@ backcall==0.1.0
 bleach==3.1.1
 cloudpickle==0.6.1
 cycler==0.10.0
-dask==1.0.0
+dask==2021.10.0
 decorator==4.3.0
 defusedxml==0.5.0
 entrypoints==0.2.3
