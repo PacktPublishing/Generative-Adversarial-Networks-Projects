@@ -14,7 +14,7 @@ matplotlib==3.0.0
 numpy==1.14.5
 opencv-python==3.4.3.18
 pkg-resources==0.0.0
-protobuf==3.6.1
+protobuf==3.15.0
 pydot==1.2.4
 pyparsing==2.2.1
 python-dateutil==2.7.3
