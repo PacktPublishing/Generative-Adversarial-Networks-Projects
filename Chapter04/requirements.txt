@@ -19,7 +19,7 @@ kiwisolver==1.0.1
 Markdown==3.0.1
 matplotlib==3.0.0
 networkx==2.2
-numpy==1.15.2
+numpy==1.22.0
 Pillow==5.3.0
 protobuf==3.6.1
 pydot==1.2.4
