@@ -6,7 +6,7 @@ decorator==4.3.0
 gast==0.2.1.post0
 grpcio==1.17.1
 h5py==2.9.0
-ipython==7.2.0
+ipython==8.10.0
 ipython-genutils==0.2.0
 jedi==0.13.2
 Keras==2.2.4
