@@ -32,7 +32,7 @@ scipy==1.2.0
 six==1.12.0
 stl==0.0.3
 tensorboard==1.12.1
-tensorflow==1.12.0
+tensorflow==2.9.3
 termcolor==1.1.0
 toolz==0.9.0
 torchfile==0.1.0
